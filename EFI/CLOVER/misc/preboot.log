@@ -1,0 +1,1678 @@
+0:100  0:100  MemLog inited, TSC freq: 3600495460
+0:100  0:000  CPU was calibrated with RTC
+0:100  0:000  CloverX64 : Image base = 0x77111000
+0:100  0:000  Clover ImageHandle = 859f5d98
+0:103  0:003  SelfDirPath = \EFI\CLOVER
+0:104  0:001  === [ Starting Clover ] =========================
+0:104  0:000  Now is 13.07.2023,  09:06:24 (GMT)
+0:104  0:000  Starting Clover revision: 5150 (master, commit 93002679f) on American Megatrends EFI
+0:104  0:000  Build id: 20221019212522-9300267-5150
+0:104  0:000  Build with: [Args: -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG -t GCC53 | --cmd-len=50000 -D NO_GRUB_DRIVERS_EMBEDDED -D LESS_DEBUG --conf=/Users/sergey/src/CloverBootloader/Conf -D USE_LOW_EBDA -a X64 -b RELEASE -t GCC53 -n 5 | OS: 10.14.6]
+0:104  0:000  === [ Get Smbios ] ==============================
+0:104  0:000  Type 16 Index = 0
+0:104  0:000  Total Memory Slots Count = 4
+0:104  0:000  Type 17 Index = 0
+0:104  0:000  SmbiosTable.Type17->SlotIndex = 0
+0:104  0:000  SmbiosTable.Type17->ModuleSize = 8192MB
+0:104  0:000  SmbiosTable.Type17->Type = 0
+0:104  0:000  SmbiosTable.Type17->Frequency = 2400MHz
+0:104  0:000  SmbiosTable.Type17->Bank/Device = BANK 0 ChannelA-DIMM0
+0:104  0:000  SmbiosTable.Type17->Vendor = 04CD
+0:104  0:000  SmbiosTable.Type17->SerialNo = 00000000
+0:104  0:000  SmbiosTable.Type17->PartNo = F4-2400C17-8GNT
+0:104  0:000  Type 17 Index = 1
+0:104  0:000  Ignoring insane frequency value 0MHz
+0:104  0:000  Type 17 Index = 2
+0:104  0:000  SmbiosTable.Type17->SlotIndex = 2
+0:104  0:000  SmbiosTable.Type17->ModuleSize = 8192MB
+0:104  0:000  SmbiosTable.Type17->Type = 0
+0:104  0:000  SmbiosTable.Type17->Frequency = 2400MHz
+0:104  0:000  SmbiosTable.Type17->Bank/Device = BANK 2 ChannelB-DIMM0
+0:104  0:000  SmbiosTable.Type17->Vendor = 8325
+0:104  0:000  SmbiosTable.Type17->SerialNo = 00000000
+0:104  0:000  SmbiosTable.Type17->PartNo = GLLG42F-18----------
+0:104  0:000  Type 17 Index = 3
+0:104  0:000  Ignoring insane frequency value 0MHz
+0:104  0:000  Boot status=0
+0:104  0:000  Running on: 'MS-7C09' with board 'H310M PRO-VDH PLUS (MS-7C09)'
+0:104  0:000  === [ GetCPUProperties ] ========================
+0:104  0:000  CPU Vendor = 756E6547 Model=906EB
+0:104  0:000   The CPU supported SSE4.1
+0:104  0:000   The CPU supported RDRAND
+0:104  0:000  BrandString = Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+0:104  0:000   The CPU not supported turbo
+0:104  0:000   Energy PerfBias is  not visible:
+0:104  0:000  MSR 0x35               40004
+0:104  0:000   TSC/CCC Information Leaf:
+0:104  0:000    numerator     : 300
+0:104  0:000    denominator   : 2
+0:104  0:000   Calibrated ARTFrequency: 24003303
+0:104  0:000   Rounded ARTFrequency: 24000000
+0:104  0:000  MSR 0xE2 before patch 1E008000
+0:104  0:000  MSR 0xE2 is locked, PM patches will be turned on
+0:104  0:000  MSR 0xCE              00080838_F1012400
+0:104  0:000  corrected FLEX_RATIO = 0
+0:104  0:000  FSBFrequency = 100 MHz, DMI FSBFrequency = 100 MHz, Corrected FSBFrequency = 100 MHz
+0:104  0:000  MaxDiv/MinDiv: 36.0/8
+0:104  0:000  Turbo: 36/36/36/36
+0:104  0:000  Features: 0x77FAFBBFBFEBFBFF
+0:104  0:000  Threads: 4
+0:104  0:000  Cores: 4
+0:104  0:000  FSB: 100 MHz
+0:104  0:000  CPU: 3600 MHz
+0:104  0:000  TSC: 3600 MHz
+0:104  0:000  PIS: 100 MHz
+0:104  0:000  ExternalClock: 25 MHz
+0:104  0:000  === [ GetDevices ] ==============================
+0:104  0:000  GOP found at: PciRoot(0x0)/Pci(0x2,0x0)/AcpiAdr(0x80010100)
+0:104  0:000  PCI (00|00:00.00) : 8086 3E1F class=060000
+0:104  0:000  PCI (00|00:02.00) : 8086 3E91 class=030000
+0:104  0:000   - GFX: Model=Intel UHD Graphics 630 (Intel)
+0:104  0:000   - GOP: Provided by device
+0:104  0:000  PCI (00|00:08.00) : 8086 1911 class=088000
+0:104  0:000  PCI (00|00:14.00) : 8086 A2AF class=0C0330
+0:104  0:000  PCI (00|00:14.02) : 8086 A2B1 class=118000
+0:104  0:000  PCI (00|00:16.00) : 8086 A2BA class=078000
+0:104  0:000  PCI (00|00:17.00) : 8086 A282 class=010601
+0:104  0:000  PCI (00|00:1C.00) : 8086 A294 class=060400
+0:104  0:000  PCI (00|01:00.00) : 10EC 8168 class=020000
+0:104  0:000   - LAN: 1 Vendor=Realtek
+0:104  0:000  Legacy MAC address of LAN #0= 00:D8:61:6D:D6:6F:
+0:104  0:000  PCI (00|00:1F.00) : 8086 A2CA class=060100
+0:104  0:000  PCI (00|00:1F.02) : 8086 A2A1 class=058000
+0:104  0:000  PCI (00|00:1F.03) : 8086 A2F0 class=040300
+0:104  0:000  PCI (00|00:1F.04) : 8086 A2A3 class=0C0500
+0:111  0:006  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\MS-7C09--00-D8-61-6D-D6-6F'. Dir doesn't exist.
+0:111  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\H310M PRO-VDH PLUS (MS-7C09)\UEFI'. Dir doesn't exist.
+0:112  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\MS-7C09'. Dir doesn't exist.
+0:112  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\MS-7C09-3600'. Dir doesn't exist.
+0:113  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\H310M PRO-VDH PLUS (MS-7C09)'. Dir doesn't exist.
+0:114  0:000  _checkOEMPath Look for oem dir at path '\EFI\CLOVER\OEM\H310M PRO-VDH PLUS (MS-7C09)-3600'. Dir doesn't exist.
+0:114  0:000  === [ GetUserSettings ] =========================
+0:114  0:000  GetDefaultModel()=iMac18,3
+0:126  0:011  Using config.plist at path: \EFI\CLOVER
+0:127  0:001  Cannot find smbios.plist at path '\EFI\CLOVER' : Not Found
+0:127  0:000  '\EFI\CLOVER\smbios.plist' not loaded. Efi error Not Found
+0:127  0:000  Using latest BiosVersion from config instead of default 'IM183.88Z.F000.B00.2106131835'
+0:127  0:000  Using latest BiosReleaseDate from config instead of default '06/13/2021'
+0:127  0:000  Using latest EfiVersion from config instead of default '451.140.1.0.0'
+0:127  0:000  BiosVersion: IM183.88Z.F000.B00.2302021933
+0:127  0:000  BiosReleaseDate: 02/02/2023
+0:127  0:000  EfiVersion: 509.0.0.0.0
+0:127  0:000  Calibrated TSC Frequency = 3600495460 = 3600MHz
+0:127  0:000  === [ GetListOfThemes ] =========================
+0:135  0:007  - [00]: cesium
+0:147  0:011  - [01]: random
+0:158  0:011  - [01]: embedded
+0:162  0:003  === [ Found config plists ] =====================
+0:162  0:000  - config.plist
+0:162  0:000  === [ LoadDrivers ] =============================
+0:169  0:006  Loading FSInject.efi status=Success
+0:177  0:008  Loading UsbKbDxe.efi status=Success
+0:286  0:109   - driver needs connecting
+0:286  0:000  Loading NvmExpressDxe.efi status=Success
+0:296  0:009   - driver needs connecting
+0:296  0:000  Loading HFSPlus.efi status=Success
+0:305  0:009   - driver needs connecting
+0:305  0:000  Loading EnglishDxe.efi status=Success
+0:314  0:008  Loading SMCHelper.efi status=Success
+0:322  0:008  Loading OsxAptioFix3Drv.efi status=Success
+0:330  0:008  Loading Fat.efi status=Success
+0:346  0:015   - driver needs connecting
+0:346  0:000  Loading Ps2MouseDxe.efi status=Success
+0:355  0:008   - driver needs connecting
+0:355  0:000  Loading DataHubDxe.efi status=Success
+0:364  0:009  Loading PartitionDxe.efi status=Success
+0:373  0:008   - driver needs connecting
+0:373  0:000  Loading ApfsDriverLoader.efi status=Success
+0:482  0:109   - driver needs connecting
+0:482  0:000  Loading UsbMouseDxe.efi status=Success
+0:491  0:008   - driver needs connecting
+0:493  0:002  8 drivers needs connecting ...
+0:493  0:000  PlatformDriverOverrideProtocol->GetDriver overriden
+0:493  0:000  Partition driver loaded: 
+0:493  0:000  HFS+ driver loaded
+0:493  0:000  APFS driver loaded
+0:493  0:000  Searching for invalid DiskIo BY_DRIVER connects: not found, all ok
+1:419  0:926  === [ InitScreen ] ==============================
+1:419  0:000  Console modes reported: 4, available modes:
+1:419  0:000   - [01]: 80x25
+1:419  0:000   - [02]: 80x25
+1:419  0:000   - [03]: 100x31
+1:419  0:000   - [04]: 128x40 (current mode)
+1:419  0:000  SetMaxResolution: found best mode 0: 1024x768
+1:419  0:000   - already set
+1:419  0:000  SetScreenResolution: 1024x768 - already set
+1:424  0:004  === [ ScanSPD ] =================================
+1:424  0:000  Scanning SMBus [8086:A2A3], mmio: 0xDF12A004, ioport: 0xF040, hostc: 0x1
+1:440  0:016  Not using XMP because it is not present
+1:440  0:000  Slot: 0 Type 26 8192MB 2400MHz Vendor=G Skill Intl PartNo=F4-2400C17-8GNT SerialNo=00000000
+1:459  0:018  Not using XMP because it is not present
+1:459  0:000  Slot: 2 Type 26 8192MB 2400MHz Vendor=Kingmax Semiconductor PartNo=GLLG42F-18---------- SerialNo=00000000
+1:460  0:000  === [ GetAcpiTablesList ] =======================
+1:460  0:000  Get Acpi Tables List from RSDT:
+1:460  0:000   - [00]: FACP  A M I  len=132
+1:460  0:000   - [01]: APIC  A M I  len=132
+1:460  0:000   - [02]: FPDT  A M I  len=68
+1:460  0:000   - [03]: FIDT  A M I len=156
+1:460  0:000   - [04]: MCFG  A M I  len=60
+1:460  0:000   - [05]: SSDT  SataTabl len=931
+1:460  0:000   - [06]: SSDT  SaSsdt  len=12645
+1:460  0:000   - [07]: HPET  KBL len=56
+1:460  0:000   - [08]: SSDT  Ther_Rvp len=4522
+1:460  0:000   - [09]: SSDT  xh_rvp08 len=2599
+1:460  0:000   - [10]: UEFI  A M I  len=66
+1:460  0:000   - [11]: SSDT  CpuSsdt len=6062
+1:460  0:000   - [12]: LPIT  KBL len=148
+1:460  0:000   - [13]: SSDT  HdaDsp len=321
+1:460  0:000   - [14]: SSDT  sensrhub len=671
+1:460  0:000   - [15]: SSDT  PtidDevc len=12290
+1:460  0:000   - [16]: SSDT  TbtTypeC len=1303
+1:460  0:000   - [17]: SSDT  Wwan len=745
+1:460  0:000   - [18]: DBGP   len=52
+1:460  0:000   - [19]: DBG2   len=84
+1:460  0:000   - [20]: BGRT  A M I  len=56
+1:460  0:000   - [21]: WSMT  A M I  len=40
+1:460  0:000   - [00]: Drop table : SSDT,       6d50757043 :  no
+1:460  0:000   - [01]: Drop table : SSDT,   74734930757043 :  no
+1:460  0:000   - [02]: Drop table : DMAR,                0 :  no
+1:460  0:000   - [03]: Drop table : MATS,                0 :  no
+1:460  0:000  Custom boot CUSTOM_BOOT_THEME (0x0)
+1:460  0:000  Default theme: hackintoshzone
+1:461  0:001  === [ Found DSDT tables ] =======================
+1:464  0:002  === [ InitKextList ] ============================
+1:606  0:141  === [ ScanVolumes ] =============================
+1:606  0:000  Found 15 volumes with blockIO
+1:606  0:000  - [00]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)
+1:606  0:000          Result of bootcode detection: bootable unknown (legacy)
+1:606  0:000  - [01]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)
+1:607  0:001  - [02]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(1,GPT,EC6F01D0-0C2A-4068-8C07-AB5EBB521246,0x22,0x7FDE)
+1:608  0:000  - [03]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,0007F455-8B60-5F59-2DA3-D901AAE80F00,0x8000,0x1538000)
+1:608  0:000          Result of bootcode detection: bootable Windows (win)
+1:611  0:002            label : EFI
+1:611  0:000          This is SelfVolume !!
+1:611  0:000  - [04]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(3,GPT,1B07FD0F-7DF0-4406-8F84-FED59A2331CD,0x1540000,0x44741800)
+1:612  0:000          Result of bootcode detection: bootable Windows (vista,win)
+1:612  0:000            label : Data
+1:612  0:000  - [05]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)
+1:613  0:000          Result of bootcode detection: bootable unknown (legacy)
+1:613  0:000  - [06]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(1,GPT,7311FD2C-2C63-44B9-B969-F98AAD177BAB,0x800,0x8000)
+1:613  0:000  - [07]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(2,GPT,B0993FB7-0510-4C39-8D7D-8753562A8BCE,0x8800,0xEE0F000)
+1:614  0:000          Result of bootcode detection: bootable Windows (vista,win)
+1:614  0:000            label : Windows 11
+1:614  0:000  - [08]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(3,GPT,000060F9-B010-DD99-58FC-F90FF2C10000,0xEE17800,0x64800)
+1:614  0:000          Result of bootcode detection: bootable Windows (win)
+1:619  0:004            label : EFI
+1:619  0:000  - [09]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,A7E9529DA0C9EB42A2CBE35F27AF66F4)
+1:619  0:000            apfsFileSystemUUID=9D52E9A7-C9A0-42EB-A2CB-E35F27AF66F4, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0x10
+1:619  0:000            label : Preboot
+1:619  0:000  - [10]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,26971F9ACF96FC4ABCA71678D54ADA0F)
+1:619  0:000            apfsFileSystemUUID=9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0x40
+1:731  0:112            label : Macos - Dữ liệu
+1:731  0:000  - [11]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C8DDB0DCAFB3C343983FAFAD76EAB855)
+1:731  0:000            apfsFileSystemUUID=DCB0DDC8-B3AF-43C3-983F-AFAD76EAB855, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0x4
+1:731  0:000            label : Recovery
+1:731  0:000  - [12]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,BAF61C79D6931742BA1790A5D580040D)
+1:731  0:000            apfsFileSystemUUID=791CF6BA-93D6-4217-BA17-90A5D580040D, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0x8
+1:731  0:000            label : VM
+1:731  0:000  - [13]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9588E99C777F654D8BB2B60657ED465A)
+1:731  0:000            apfsFileSystemUUID=9CE98895-7F77-4D65-8BB2-B60657ED465A, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0x1
+1:779  0:047            label : Macos
+1:779  0:000  - [14]: Volume: PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,9FE8BCA30ADCB1418A4778DA5B684BC0)
+1:779  0:000            apfsFileSystemUUID=A3BCE89F-DC0A-41B1-8A47-78DA5B684BC0, ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E, ApfsRole=0xc0
+1:779  0:000            label : Update
+1:779  0:000  No AudioIoProtocols, status=Not Found
+1:780  0:000  === [ InitXTheme ] ==============================
+1:780  0:000  use Daylight theme
+1:781  0:001  GlobalConfig: hackintoshzone not found, get embedded theme
+1:781  0:000   using embedded theme
+1:790  0:008  sound play end with status=Device Error
+1:791  0:000  Using embedded font
+1:791  0:000  theme inited
+1:791  0:000  Chosen embedded theme
+1:791  0:000  after NVRAM boot-args=-v dart=0 darkwake=0 debug=0x100
+1:791  0:000  === [ Dump SMC keys from NVRAM ] ================
+1:791  0:000  found AppleSMC protocol
+1:796  0:005     fakesmc-key-RBr -ch8*:6A 31 33 33 5F 34 5F 35 
+1:797  0:000     fakesmc-key-EPCI-ui32:09 60 F0 00 
+1:798  0:000     fakesmc-key-REV -ch8*:02 41 0F 00 00 02 
+1:799  0:000     fakesmc-key-RVBF-ch8*:02 41 0F 00 00 02 
+1:799  0:000     fakesmc-key-RPlt-ch8*:6A 31 33 34 00 00 00 00 
+1:800  0:000     fakesmc-key-BEMB-flag:00 
+1:801  0:000     fakesmc-key-BATP-flag:00 
+1:801  0:000     fakesmc-key-BNum-ui8:00 
+1:802  0:000     fakesmc-key-MSTc-ui8:00 
+1:803  0:000     fakesmc-key-MSAc-ui16:00 00 
+1:804  0:000     fakesmc-key-MSWr-ui8:00 
+1:804  0:000     fakesmc-key-MSFW-ui8:01 00 
+1:805  0:000     fakesmc-key-MSPS-ui16:00 03 
+1:806  0:000     fakesmc-key-#KEY-ui32:00 00 00 11 
+1:807  0:000     fakesmc-key-$Adr-ui32:00 00 03 00 
+1:807  0:000     fakesmc-key-$Num-ui8:01 
+1:808  0:000     fakesmc-key-RMde-char:41 
+1:815  0:007  Registered 17 SMC keys
+1:817  0:002  === [ ScanLoader ] ==============================
+1:817  0:000  - [03]: 'EFI'
+1:837  0:019        AddLoaderEntry for Volume Name=EFI, idx=0
+1:837  0:000        OSVersion= 
+1:837  0:000        IconName=unknown comma=-1 size=7
+1:837  0:000        Full=unknown
+1:837  0:000        Loader entry created for 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(2,GPT,0007F455-8B60-5F59-2DA3-D901AAE80F00,0x8000,0x1538000)\EFI\BOOT\BOOTX64.efi'
+1:837  0:000        Menu entry added at index 0
+1:837  0:000       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+1:837  0:000  - [04]: 'Data'
+1:837  0:000  - [07]: 'Windows 11'
+1:837  0:000  - [08]: 'EFI'
+1:851  0:014        AddLoaderEntry for Volume Name=EFI, idx=1
+1:851  0:000        OSVersion= 
+1:851  0:000        IconName=vista,win comma=5 size=9
+1:851  0:000        first=os_vista
+1:851  0:000        Second=os_win
+1:851  0:000        IconName=unknown comma=-1 size=7
+1:851  0:000        Full=unknown
+1:851  0:000        Loader entry created for 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(3,GPT,000060F9-B010-DD99-58FC-F90FF2C10000,0xEE17800,0x64800)\EFI\microsoft\Boot\bootmgfw.efi'
+1:851  0:000        Menu entry added at index 1
+1:863  0:011        AddLoaderEntry for Volume Name=EFI, idx=2
+1:863  0:000        OSVersion= 
+1:863  0:000        IconName=unknown comma=-1 size=7
+1:863  0:000        Full=unknown
+1:863  0:000        Loader entry created for 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x1,0xFFFF,0x0)\HD(3,GPT,000060F9-B010-DD99-58FC-F90FF2C10000,0xEE17800,0x64800)\EFI\BOOT\BOOTX64.efi'
+1:863  0:000        Menu entry added at index 2
+1:863  0:000       hiding entry because DiskKind is DISK_KIND_INTERNAL: \EFI\BOOT\BOOTX64.efi
+1:863  0:000  - [09]: 'Preboot'
+1:863  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+1:864  0:000      ApfsFileSystemUUID=9D52E9A7-C9A0-42EB-A2CB-E35F27AF66F4
+1:864  0:000      APFSTargetUUID=9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F
+1:892  0:028        contentDetails name:Macos
+1:899  0:006        AddLoaderEntry for Volume Name=Preboot, idx=3
+1:910  0:010        OSVersion=12.6.6 
+1:910  0:000      hibernated: set as never
+1:910  0:000        IconName=monterey,mac comma=8 size=12
+1:910  0:000        first=os_monterey
+1:910  0:000        Second=os_mac
+1:910  0:000        IconName=unknown comma=-1 size=7
+1:910  0:000        Full=unknown
+1:910  0:000        Loader entry created for 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,A7E9529DA0C9EB42A2CBE35F27AF66F4)\9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F\System\Library\CoreServices\boot.efi'
+1:913  0:002        Menu entry added at index 3
+1:913  0:000  - [10]: 'Macos - Dữ liệu'
+1:913  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+1:913  0:000      ApfsFileSystemUUID=9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F
+1:913  0:000  - [11]: 'Recovery'
+1:913  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+1:913  0:000      ApfsFileSystemUUID=DCB0DDC8-B3AF-43C3-983F-AFAD76EAB855
+1:913  0:000      APFSTargetUUID=9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F
+1:914  0:000        contentDetails name:Macos
+1:915  0:001        AddLoaderEntry for Volume Name=Recovery, idx=4
+1:925  0:009        OSVersion=12.6.6 
+1:925  0:000        IconName=monterey,mac comma=8 size=12
+1:925  0:000        first=os_monterey
+1:925  0:000        Second=os_mac
+1:925  0:000        IconName=unknown comma=-1 size=7
+1:925  0:000        Full=unknown
+1:925  0:000        Loader entry created for 'PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C8DDB0DCAFB3C343983FAFAD76EAB855)\9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F\BaseSystem.dmg'
+1:927  0:002        Menu entry added at index 4
+1:927  0:000  - [12]: 'VM'
+1:927  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+1:927  0:000      ApfsFileSystemUUID=791CF6BA-93D6-4217-BA17-90A5D580040D
+1:928  0:000  - [13]: 'Macos'
+1:928  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+1:928  0:000      ApfsFileSystemUUID=9CE98895-7F77-4D65-8BB2-B60657ED465A
+2:130  0:202  - [14]: 'Update'
+2:130  0:000      ApfsContainerUUID=C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E
+2:130  0:000      ApfsFileSystemUUID=A3BCE89F-DC0A-41B1-8A47-78DA5B684BC0
+2:130  0:000  Entries list before ordering
+2:130  0:000      Entry 0 : Boot UEFI internal from EFI (hidden)
+2:130  0:000      Entry 1 : Boot Microsoft EFI Boot from EFI
+2:130  0:000      Entry 2 : Boot UEFI internal from EFI (hidden)
+2:130  0:000      Entry 3 : Boot Mac OS from Macos via Preboot
+2:130  0:000      Entry 4 : Boot Mac OS Recovery for Macos via Recovery
+2:130  0:000  Entries list after ordering
+2:130  0:000    Entry 0 : Boot UEFI internal from EFI (hidden)
+2:130  0:000    Entry 1 : Boot Microsoft EFI Boot from EFI
+2:130  0:000    Entry 2 : Boot UEFI internal from EFI (hidden)
+2:130  0:000    Entry 3 : Boot Mac OS from Macos via Preboot
+2:130  0:000    Entry 4 : Boot Mac OS Recovery for Macos via Recovery
+2:130  0:000  Scanning legacy ...
+2:130  0:000      AddLegacyEntry:
+2:130  0:000        FullTitle=
+2:130  0:000        LoaderTitle=
+2:130  0:000        Volume->LegacyOS->Name=Windows
+2:130  0:000        Entry->Title=Boot Windows from EFI
+2:130  0:000        IconName=win comma=-1 size=3
+2:130  0:000        Full=win
+2:130  0:000        IconName=unknown comma=-1 size=7
+2:130  0:000        Full=unknown
+2:131  0:000      AddLegacyEntry:
+2:131  0:000        FullTitle=
+2:131  0:000        LoaderTitle=
+2:131  0:000        Volume->LegacyOS->Name=Windows
+2:131  0:000        Entry->Title=Boot Windows from Data
+2:131  0:000        IconName=vista,win comma=5 size=9
+2:131  0:000        first=os_vista
+2:131  0:000        Second=os_win
+2:131  0:000        IconName=unknown comma=-1 size=7
+2:131  0:000        Full=unknown
+2:131  0:000      AddLegacyEntry:
+2:131  0:000        FullTitle=
+2:131  0:000        LoaderTitle=
+2:131  0:000        Volume->LegacyOS->Name=Windows
+2:131  0:000        Entry->Title=Boot Windows from Windows 11
+2:131  0:000        IconName=vista,win comma=5 size=9
+2:131  0:000        first=os_vista
+2:131  0:000        Second=os_win
+2:131  0:000        IconName=unknown comma=-1 size=7
+2:131  0:000        Full=unknown
+2:131  0:000      AddLegacyEntry:
+2:131  0:000        FullTitle=
+2:131  0:000        LoaderTitle=
+2:131  0:000        Volume->LegacyOS->Name=Windows
+2:131  0:000        Entry->Title=Boot Windows from EFI
+2:131  0:000        IconName=win comma=-1 size=3
+2:131  0:000        Full=win
+2:131  0:000        IconName=unknown comma=-1 size=7
+2:131  0:000        Full=unknown
+2:131  0:000  === [ AddCustomTool ] ===========================
+2:149  0:017  found tool \EFI\CLOVER\tools\Shell64U.efi
+2:149  0:000  Checking EFI partition Volume 8 for Clover
+2:153  0:003   Found Clover
+2:153  0:000  === [ GetEfiBootDeviceFromNvram ] ===============
+2:153  0:000   - [!] efi-boot-device-data not found
+2:153  0:000  Default boot entry not found
+2:153  0:000  BannerPlace at Clear Screen [448,68]
+2:218  0:064  GUI ready
+28:209  25:991  BootVariable of the entry is empty
+28:209  0:000  === [ StartLoader ] =============================
+28:209  0:000  Starting PciRoot(0x0)\Pci(0x17,0x0)\Sata(0x0,0xFFFF,0x0)\HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)\VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C8DDB0DCAFB3C343983FAFAD76EAB855)\9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F\BaseSystem.dmg
+28:209  0:000  Finally: ExternalClock=26MHz BusSpeed=100014kHz CPUFreq=3600MHz PIS: hw.busfrequency=104000000Hz
+28:209  0:000  Beginning OC
+28:212  0:002  OCST: Missing vault data, ignoring...
+28:212  0:000  config-oc.plist isn't used at all
+28:213  0:001  AddKextsInArray from Other
+28:213  0:000  ->Extra kext: Other\AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext (v.0.5.0)
+28:213  0:000  ->Extra kext: Other\Lilu.kext (v.1.3.8)
+28:213  0:000  ->Extra kext: Other\VoodooHDA.kext (v.3.0.1)
+28:213  0:000  ->Extra kext: Other\RealtekRTL8111.kext (v.2.4.2)
+28:213  0:000  ->Extra kext: Other\WhateverGreen.kext (v.1.6.2)
+28:213  0:000  ->Extra kext: Other\FakePCIID_XHCIMux.kext (v.1.3.15)
+28:213  0:000  ->Extra kext: Other\GenericUSBXHCI.kext (v.1.2.11)
+28:213  0:000  ->Extra kext: Other\NullCPUPowerManagement.kext (v.1.0.0d2)
+28:213  0:000  ->Extra kext: Other\USBInjectAll.kext (v.0.7.1)
+28:213  0:000  ->Extra kext: Other\FakePCIID.kext (v.1.3.15)
+28:213  0:000  ->Extra kext: Other\FakeSMC_GPUSensors.kext (v.1800)
+28:213  0:000  ->Extra kext: Other\FakeSMC.kext (v.4.2.0)
+28:213  0:000  ->Extra kext: Other\XHCI-unsupported.kext (v.0.9.2)
+28:213  0:000  GetOtherKextsDir(false) return NULL
+28:213  0:000  AddKextsInArray from 12
+28:213  0:000  AddKextsInArray from 12_recovery
+28:213  0:000  AddKextsInArray from 12.6
+28:213  0:000  AddKextsInArray from 12.6_recovery
+28:213  0:000  AddKextsInArray from 12.6.6
+28:213  0:000  AddKextsInArray from 12.6.6_recovery
+28:213  0:000  Bridge kext to OC : Path=Lilu.kext
+28:215  0:001  info plist path: Kexts\Other\Lilu.kext\Contents\Info.plist
+28:216  0:001  InfoPlistPath=Kexts\Other\Lilu.kext\Contents\Info.plist
+28:220  0:003  assign executable as 'Contents\MacOS\Lilu'
+28:220  0:000  Bridge kext to OC : Path=FakeSMC.kext
+28:221  0:001  info plist path: Kexts\Other\FakeSMC.kext\Contents\Info.plist
+28:222  0:001  InfoPlistPath=Kexts\Other\FakeSMC.kext\Contents\Info.plist
+28:226  0:003  assign executable as 'Contents\MacOS\FakeSMC'
+28:226  0:000  Bridge kext to OC : Path=FakePCIID.kext
+28:227  0:001  info plist path: Kexts\Other\FakePCIID.kext\Contents\Info.plist
+28:228  0:001  InfoPlistPath=Kexts\Other\FakePCIID.kext\Contents\Info.plist
+28:232  0:003  assign executable as 'Contents\MacOS\FakePCIID'
+28:232  0:000  Bridge kext to OC : Path=FakePCIID_XHCIMux.kext
+28:233  0:001  info plist path: Kexts\Other\FakePCIID_XHCIMux.kext\Contents\Info.plist
+28:234  0:001  InfoPlistPath=Kexts\Other\FakePCIID_XHCIMux.kext\Contents\Info.plist
+28:238  0:003  assign executable as 'Contents\MacOS\FakePCIID_XHCIMux'
+28:238  0:000  Bridge kext to OC : Path=WhateverGreen.kext
+28:239  0:001  info plist path: Kexts\Other\WhateverGreen.kext\Contents\Info.plist
+28:240  0:001  InfoPlistPath=Kexts\Other\WhateverGreen.kext\Contents\Info.plist
+28:244  0:003  assign executable as 'Contents\MacOS\WhateverGreen'
+28:244  0:000  Bridge kext to OC : Path=AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext
+28:245  0:001  info plist path: Kexts\Other\AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext\Contents\Info.plist
+28:246  0:001  InfoPlistPath=Kexts\Other\AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext\Contents\Info.plist
+28:249  0:002  Bridge kext to OC : Path=VoodooHDA.kext
+28:250  0:001  info plist path: Kexts\Other\VoodooHDA.kext\Contents\Info.plist
+28:251  0:001  InfoPlistPath=Kexts\Other\VoodooHDA.kext\Contents\Info.plist
+28:288  0:036  assign executable as 'Contents\MacOS\VoodooHDA'
+28:288  0:000  Bridge kext to OC : Path=RealtekRTL8111.kext
+28:289  0:001  info plist path: Kexts\Other\RealtekRTL8111.kext\Contents\Info.plist
+28:290  0:001  InfoPlistPath=Kexts\Other\RealtekRTL8111.kext\Contents\Info.plist
+28:294  0:003  assign executable as 'Contents\MacOS\RealtekRTL8111'
+28:294  0:000  Bridge kext to OC : Path=GenericUSBXHCI.kext
+28:295  0:001  info plist path: Kexts\Other\GenericUSBXHCI.kext\Contents\Info.plist
+28:304  0:008  InfoPlistPath=Kexts\Other\GenericUSBXHCI.kext\Contents\Info.plist
+28:308  0:004  assign executable as 'Contents\MacOS\GenericUSBXHCI'
+28:308  0:000  Bridge kext to OC : Path=NullCPUPowerManagement.kext
+28:309  0:001  info plist path: Kexts\Other\NullCPUPowerManagement.kext\Contents\Info.plist
+28:314  0:004  InfoPlistPath=Kexts\Other\NullCPUPowerManagement.kext\Contents\Info.plist
+28:317  0:003  assign executable as 'Contents\MacOS\NullCPUPowerManagement'
+28:317  0:000  Bridge kext to OC : Path=USBInjectAll.kext
+28:319  0:001  info plist path: Kexts\Other\USBInjectAll.kext\Contents\Info.plist
+28:320  0:001  InfoPlistPath=Kexts\Other\USBInjectAll.kext\Contents\Info.plist
+28:338  0:017  assign executable as 'Contents\MacOS\USBInjectAll'
+28:338  0:000  Bridge kext to OC : Path=FakeSMC_GPUSensors.kext
+28:339  0:001  info plist path: Kexts\Other\FakeSMC_GPUSensors.kext\Contents\Info.plist
+28:340  0:001  InfoPlistPath=Kexts\Other\FakeSMC_GPUSensors.kext\Contents\Info.plist
+28:343  0:003  assign executable as 'Contents\MacOS\GPUSensors'
+28:343  0:000  Bridge kext to OC : Path=XHCI-unsupported.kext
+28:345  0:001  info plist path: Kexts\Other\XHCI-unsupported.kext\Contents\Info.plist
+28:352  0:007  InfoPlistPath=Kexts\Other\XHCI-unsupported.kext\Contents\Info.plist
+28:371  0:019  Start 'OpenRuntime.efi' : Status Success
+28:371  0:000  OC: OcMiscEarlyInit...
+28:371  0:000  OC: OpenCore DBG-082-2022-10-24 is loading in Optional mode (0/0)...
+28:371  0:000  OC: OcMiscMiddleInit...
+28:371  0:000  OC: StorageHandle 0 with  LauncherOption pointing to 
+28:371  0:000  OC: OcLoadUefiSupport...
+28:371  0:000  OCAU: OcAudioInstallProtocols (0, 0)
+28:371  0:000  OCRTC: OcAppleRtcRamInstallProtocol
+28:371  0:000  OCRTC: Wake log is 0x00 0x00   0 0x00
+28:371  0:000  OcAppleFbInfoInstallProtocol
+28:371  0:000  OcAppleEg2InfoInstallProtocol
+28:371  0:000  OC: Loading Apple Secure Boot with Disabled (level 0)
+28:372  0:000  OCABC: ALRBL 0 RTDFRG 1 DEVMMIO 0 NOSU 0 NOVRWR 0 NOSB 0 FBSIG 0 NOHBMAP 0 SMSLIDE 1 WRUNPROT 1
+28:372  0:000  OCABC: FEXITBS 0 PRMRG 0 CSLIDE 0 MSLIDE 0 PRSRV 0 RBMAP 0 VMAP 1 APPLOS 0 RTPERMS 1 ARBAR -1
+28:372  0:000  OCABC: Got rendezvous with OpenRuntime r12
+28:372  0:000  OCABC: MAT support is 1
+28:372  0:000  OC: RequestBootVarRouting 0
+28:372  0:000  OC: Increasing GPU BARs to 0
+28:372  0:000  OCDM: Setting RBAR to 0 inc 1 on 2/13
+28:372  0:000  OCDM: Capability I/O error - Unsupported
+28:372  0:000  OCDM: RBAR is unsupported by device - Device Error
+28:372  0:000  OC: Got 0 drivers
+28:372  0:000  OCC: Installing GOP (Unsupported) on ConsoleOutHandle...
+28:372  0:000  OC: Requested resolution is 0x0@0 (max: 0, force: 0) from 
+28:372  0:000  OC: Selected UIScale 1 based on 1024x768 resolution
+28:373  0:000  OC: Setting UIScale to 1 - Success
+28:373  0:000  OCC: Using builtin text renderer with 1 scale
+28:400  0:027  OCC: Install console control (77272900/0/0), current - Success
+28:400  0:000  OCC: Setup ASCII Output - Success
+28:400  0:000  OC: Requested console mode is 0x0 (max: 0) from 
+28:400  0:000  OC: Requested not to use audio
+28:400  0:000  OC: OcLoadAcpiSupport...
+28:400  0:000  OC: OcLoadAcpiSupport : nothing to do
+28:400  0:000  OC: OcMiscLateInit...
+28:400  0:000  OC: Invalid HibernateMode: 
+28:400  0:000  OC: Translated HibernateMode  to 0
+28:401  0:000  OC: Hibernation activation - Invalid Parameter, hibernation wake - no
+28:401  0:000  OC: OcLoadKernelSupport...
+28:401  0:000  OC: All green, starting boot management...
+28:401  0:000  DevicePathToDmgDir = PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x0,0xFFFF,0x0)/HD(4,GPT,E36A77D7-89D5-40F4-B496-00866B4F34FA,0x45C82088,0x2EA84D00)/VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,C8DDB0DCAFB3C343983FAFAD76EAB855)/\9A1F9726-96CF-4AFC-BCA7-1678D54ADA0F
+28:402  0:001  OCABC: AllocPages 2 0x100000000 (272782) - Success
+28:492  0:089  OCRAM: Extent allocation of 1117308460 bytes (A) gave 100000000
+35:404  6:911  OCB: Found chunklist BaseSystem.chunklist for DMG BaseSystem.dmg[10]
+35:406  0:001  OCABC: AllocPages 0 0x8380C000 (8) - Success
+35:407  0:000  OCABC: AllocPages 0 0x83804000 (8) - Success
+35:407  0:000  OCJS: Matched device path
+35:407  0:000  OCJS: Matched device path
+35:407  0:000  OCJS: Testing disk with 4253584E magic 4096 block
+35:407  0:000  OCJS: Got APFS super block for DA479A5A-4DC6-1741-8D26-55338F3EF3EA
+35:407  0:000  OCJS: Block (P:1|F:0) read req E2F -> 7178 of 1000 (mask 0, mul 8) - Success
+35:412  0:004  OCJS: APFS driver 1934141002000000/20220809 found for DA479A5A-4DC6-1741-8D26-55338F3EF3EA, required >= 1600000000000000/20210101, allow
+35:412  0:000  OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+35:412  0:000  OCB: Arch filtering 0(634472)->8375E018(634472) caps 4 - Success
+35:413  0:000  OC: Supported boot capabilities 4
+35:413  0:000  OCJS: Connecting normally APFS driver on handle 841D4A98
+35:421  0:007  OCBP: Blessed file is valid
+35:421  0:000  OCBP: 12 filesystems for APFS - Success
+35:424  0:003  OCBP: APFS Volume Info is missing
+35:424  0:000  OCBP: No APFS info 1 of 12 - Not Found
+35:424  0:000  OCBP: APFS Volume Info is missing
+35:424  0:000  OCBP: No APFS info 2 of 12 - Not Found
+35:424  0:000  OCBP: APFS Volume Info is missing
+35:424  0:000  OCBP: No APFS info 3 of 12 - Not Found
+35:426  0:001  OCBP: APFS Volume Info is missing
+35:427  0:000  OCBP: No APFS info 4 of 12 - Not Found
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 5 of 12 - 0
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 6 of 12 - 0
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 7 of 12 - 0
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 8 of 12 - 0
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 9 of 12 - 0
+35:427  0:000  OCBP: APFS match container C3C0ABB1-B29D-41BD-81C6-E4EFFBAE7C2E vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 10 of 12 - 0
+35:427  0:000  OCBP: APFS match container 5A9A47DA-C64D-4117-8D26-55338F3EF3EA vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 11 of 12 - 1
+35:427  0:000  OC: Opening file 28EBF209-D2DD-47BC-AEA9-E99514660B83 with 1 mode gave - Not Found
+35:427  0:000  OCBP: Missing partition 28EBF209-D2DD-47BC-AEA9-E99514660B83 on preboot - Not Found
+35:427  0:000  OCBP: No APFS booter 11 of 12 for 28EBF209-D2DD-47BC-AEA9-E99514660B83 - Not Found
+35:427  0:000  OCBP: APFS match container 5A9A47DA-C64D-4117-8D26-55338F3EF3EA vs 5A9A47DA-C64D-4117-8D26-55338F3EF3EA for 12 of 12 - 1
+35:427  0:000  OC: Opening file 49A54020-6608-4046-90E2-22FA081B00EA with 1 mode gave - Success
+35:427  0:000  OCBP: Found partition 49A54020-6608-4046-90E2-22FA081B00EA on preboot
+35:427  0:000  OCBP: Want predefined list for APFS 16 at 49A54020-6608-4046-90E2-22FA081B00EA
+35:427  0:000  OC: Opening file System\Library\CoreServices\boot.efi with 1 mode gave - Success
+35:427  0:000  OCBP: Predefined 49A54020-6608-4046-90E2-22FA081B00EA \System\Library\CoreServices\boot.efi was found
+35:427  0:000  OCBP: Found APFS booter 12 of 12 for 49A54020-6608-4046-90E2-22FA081B00EA (775C9210)
+35:427  0:000  OCBP: APFS bless for 5A9A47DA-C64D-4117-8D26-55338F3EF3EA:<null string> is Success
+35:427  0:000  OCSB: Disabling secure boot for Apple images
+35:427  0:000  DevicePath of dmg = VenHw(957932CC-7E8E-433B-8F41-D391EA3C10F8,00000000)/MemoryMapped(0xA,0x100000000,0x100001000)/DMG_000000004298C62C.dmg/VenMsg(004B07E8-0B9C-427E-B0D4-A466E6E57A62,2CC6984200000000)/HD(1,GPT,6F8B759A-3114-4FF8-B494-327700D74D06,0x22,0x220000)/VenMedia(BE74FCF7-0B7C-49F3-9147-01F4042E6842,09F2EB28DDD2BC47AEA9E99514660B83)/\49A54020-6608-4046-90E2-22FA081B00EA\System\Library\CoreServices\boot.efi
+35:427  0:000  OCABC: IsEfiBootRt 0 (BP 1, Apple 0)
+35:427  0:000  OCB: Arch filtering 83671018(723512)->83671018(723512) caps 4 - Success
+35:456  0:028  GetOSVersion: 12.6.6 (21G646)
+35:456  0:000  Filtering KextPatches:
+35:456  0:000   - [00]: com.apple.driver.usb.AppleUSBXHCI (disable port limit in XHCI kext (credit DalianSky,Ricky)) :: BinPatch :: [OS: 12.6.6 | MatchOS: 10.14.1,10.14.2 | MatchBuild: All]
+35:456  0:000   check MatchOS 10.14.1
+35:456  0:000  
+35:456  0:000   check MatchOS 10.14.2
+35:456  0:000   ==> not allowed
+35:456  0:000   - [01]: com.apple.iokit.IOUSBHostFamily (USB port limit patch #1 10.15) :: BinPatch :: [OS: 12.6.6 | MatchOS: 10.15.x | MatchBuild: All]
+35:456  0:000   check MatchOS 10.15.x
+35:456  0:000   ==> not allowed
+35:456  0:000   - [02]: com.apple.driver.usb.AppleUSBXHCI (USB port limit patch #2 10.15) :: BinPatch :: [OS: 12.6.6 | MatchOS: 10.15.x | MatchBuild: All]
+35:456  0:000   check MatchOS 10.15.x
+35:456  0:000   ==> not allowed
+35:456  0:000  Will not patch boot.efi
+35:456  0:000  === [ PatchSmbios ] =============================
+35:456  0:000  UpdateSmbiosString : BiosVersion=EfiVersion=509.0.0.0.0
+35:456  0:000  UpdateSmbiosString : ReleaseDate=02/02/2023
+35:456  0:000  void PatchTableType1(const SmbiosInjectedSettings&) : UpdateSmbiosString ProductName=iMac18,2
+35:456  0:000  void PatchTableType2(const SmbiosInjectedSettings&) : UpdateSmbiosString ProductName=BoardNumber=Mac-77F17D7DA9285301
+35:456  0:000  void PatchTableType2(const SmbiosInjectedSettings&) : UpdateSmbiosString Version=BoardVersion=iMac18,2
+35:456  0:000  insert table 9 for dev 0:0
+35:456  0:000  Table 11 present, but rewritten for us
+35:456  0:000  Do not inject memory table
+35:456  0:000  Trusting SMBIOS...
+35:456  0:000  Channels: 2
+35:456  0:000  Interleave: 0 2 1 3
+35:456  0:000  trusted SMBIOS data, table index 0:
+35:456  0:000    gRAM.SMBIOS[0]->ModuleSize = 8192
+35:456  0:000    gRAM.SMBIOS[0]->Type = 0
+35:456  0:000    gRAM.SMBIOS[0]->Frequency = 2400
+35:456  0:000    gRAM.SMBIOS[0]->Vendor = 04CD
+35:456  0:000    gRAM.SMBIOS[0]->PartNo = F4-2400C17-8GNT
+35:456  0:000    gRAM.SMBIOS[0]->SerialNo = 00000000
+35:456  0:000  SPD data in use:
+35:456  0:000    gRAM.SPD[0]->ModuleSize = 8192
+35:456  0:000    gRAM.SPD[0]->Type = 26
+35:456  0:000    gRAM.SPD[0]->Frequency = 2400
+35:456  0:000    gRAM.SPD[0]->Vendor = G Skill Intl
+35:456  0:000    gRAM.SPD[0]->SerialNo = 00000000
+35:456  0:000    gRAM.SPD[0]->PartNo = F4-2400C17-8GNT
+35:456  0:000    SMBIOS Type 17 Index = 0 => SMBIOSIndex=0 SPDIndex=0:
+35:456  0:000  BANK 0 DIMM0 2400MHz 8192MB(Ext:0MB)
+35:456  0:000  trusted SMBIOS data, table index 2:
+35:456  0:000    gRAM.SMBIOS[2]->ModuleSize = 8192
+35:456  0:000    gRAM.SMBIOS[2]->Type = 0
+35:456  0:000    gRAM.SMBIOS[2]->Frequency = 2400
+35:456  0:000    gRAM.SMBIOS[2]->Vendor = 8325
+35:456  0:000    gRAM.SMBIOS[2]->PartNo = GLLG42F-18----------
+35:456  0:000    gRAM.SMBIOS[2]->SerialNo = 00000000
+35:456  0:000  SPD data in use:
+35:456  0:000    gRAM.SPD[2]->ModuleSize = 8192
+35:456  0:000    gRAM.SPD[2]->Type = 26
+35:456  0:000    gRAM.SPD[2]->Frequency = 2400
+35:456  0:000    gRAM.SPD[2]->Vendor = Kingmax Semiconductor
+35:456  0:000    gRAM.SPD[2]->SerialNo = 00000000
+35:456  0:000    gRAM.SPD[2]->PartNo = GLLG42F-18----------
+35:456  0:000    SMBIOS Type 17 Index = 1 => SMBIOSIndex=2 SPDIndex=2:
+35:456  0:000  BANK 1 DIMM0 2400MHz 8192MB(Ext:0MB)
+35:456  0:000  !trusted SMBIOS data, Table index 1:!gRAM.SMBIOS.doesSlotForIndexExist(SMBIOSIndex) 
+35:456  0:000    SMBIOS Type 17 Index = 2 => SMBIOSIndex=1 SPDIndex=1:
+35:456  0:000  BANK 0 DIMM1 EMPTY
+35:456  0:000  !trusted SMBIOS data, Table index 3:!gRAM.SMBIOS.doesSlotForIndexExist(SMBIOSIndex) 
+35:456  0:000    SMBIOS Type 17 Index = 3 => SMBIOSIndex=3 SPDIndex=3:
+35:456  0:000  BANK 1 DIMM1 EMPTY
+35:456  0:000  mTotalSystemMemory = 16384
+35:456  0:000  NumberOfMemoryDevices = 4
+35:456  0:000  Type20[0]->End = 0x7FFFFF, Type17[0] = 2000
+35:456  0:000  Type20[1]->End = 0xFFFFFF, Type17[1] = 6000
+35:456  0:000  Table 131 is present, CPUType=31
+35:456  0:000  Change to: 905
+35:456  0:000  === [ PatchACPI ] ===============================
+35:456  0:000  OCABC: AllocPages 1 0x896FE000 (1) - Success
+35:456  0:000  Xsdt reallocation done
+35:456  0:000  OCABC: AllocPages 1 0x896FD000 (1) - Success
+35:456  0:000  old FADT length=114
+35:456  0:000   SignatureFixup: 0x3E412209 -> 0x0
+35:456  0:000  Found OperationRegion(GNVS, SystemMemory, 89AF9000, ...)
+35:457  0:000  Found OperationRegion(PNVA, SystemMemory, 89B2E018, ...)
+35:457  0:000  Found OperationRegion(THBA, SystemMemory, FE200000, ...)
+35:458  0:001  Found OperationRegion(ITSS, SystemMemory, FDC43100, ...)
+35:458  0:000  Found OperationRegion(TMMB, SystemMemory, FED40000, ...)
+35:458  0:000  Found OperationRegion(CRBD, SystemMemory, FED40000, ...)
+35:458  0:000  Found OperationRegion(TPMR, SystemMemory, FFFFFFFF, ...)
+35:458  0:000  Found OperationRegion(ATNV, SystemMemory, FFFF0000, ...)
+35:458  0:000  Found OperationRegion(OVSG, SystemMemory, FDAE04E0, ...)
+35:458  0:000  Found OperationRegion(WMIM, SystemMemory, 89B2ED18, ...)
+35:460  0:001  OCABC: AllocPages 1 0x896CB000 (50) - Success
+35:460  0:000  Apply DsdtFixMask=0x1265A05F
+35:460  0:000  === [ FixBiosDsdt ] =============================
+35:460  0:000  Patching DSDT:
+35:460  0:000   - [change _OSI to XOSI]: pattern 5F4F5349, patched at: [ (A7D6) ]
+35:460  0:000   - [Rename HDAS to HDEF]: pattern 48444153, patched at: [ (2DA) ]
+35:460  0:000   - [change _DSM to XDSM]: pattern 5F44534D, patched at: [ (4261) ]
+35:460  0:000   - [change EHC1 to EH01]: pattern 45484331, bin not found / already patched!
+35:461  0:000   - [change EHC2 to EH02]: pattern 45484332, bin not found / already patched!
+35:461  0:000   - [change XHCI to XHC]: pattern 58484349, patched at: [ (D191) ]
+35:461  0:000   - [change XHC1 to XHC]: pattern 58484331, bin not found / already patched!
+35:461  0:000   - [change LPC to LPCB]: pattern 4C50435F, patched at: [ (BCA3) ]
+35:461  0:000   - [change SAT0 to SATA]: pattern 53415430, patched at: [ (313) ]
+35:461  0:000   - [change EUSB to EH01]: pattern 45555342, bin not found / already patched!
+35:462  0:000   - [change USBE to EH02]: pattern 55534245, bin not found / already patched!
+35:462  0:000   - [change GFX0 to IGPU]: pattern 47465830, patched at: [ (51) ]
+35:462  0:000   - [change PEGP to GFX0]: pattern 50454750, patched at: [ (4457) ]
+35:462  0:000   - [change AZAL to HDEF]: pattern 415A414C, bin not found / already patched!
+35:462  0:000   - [change HDAS to HDEF]: pattern 48444153, bin not found / already patched!
+35:463  0:000   - [change HECI to IMEI]: pattern 48454349, patched at: [ (12402) ]
+35:463  0:000   - [change MEI to IMEI]: pattern 4D45495F, bin not found / already patched!
+35:466  0:002  found PIC had IRQNoFlag will move -3 bytes
+35:466  0:000  Start HPET Fix
+35:468  0:001  patch LAN0 in DSDT 
+35:470  0:002  NewName HDEF already present, renaming impossible
+35:472  0:001   deleting device CRT_
+35:475  0:003   deleting device DVI_
+35:478  0:003   deleting device SPKR
+35:482  0:003   deleting device ECP_
+35:485  0:003   deleting device LPT_
+35:488  0:003   deleting device FDC0
+35:491  0:003   deleting device ECP1
+35:495  0:003   deleting device LPT1
+35:498  0:003   deleting device FDC_
+35:501  0:003    indirect name=PNVB
+35:501  0:000  OperationRegion (THBA...) corrected from 0x0 to addr=0xFE200000
+35:501  0:000    indirect name=TPMM
+35:501  0:000    indirect name=FTPM
+35:501  0:000    indirect name=PPIM
+35:501  0:000    indirect name=WMIO
+35:503  0:001  PreCleanup XSDT: count=22, length=212
+35:503  0:000  PreCleanup XSDT, corrected XSDT: count=22, length=212
+35:503  0:000  === [ ACPIDropTables ] ==========================
+35:503  0:000  OCABC: AllocPages 1 0x896C9000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896C9000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896C9000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896C9000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896C9000 (2) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, bin not found / already patched!
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, patched at: [ (27) ]
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, bin not found / already patched!
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  OCABC: AllocPages 1 0x896C4000 (5) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, patched at: [ (2C53) ]
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, bin not found / already patched!
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, patched at: [ (2D) ]
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  Found OperationRegion(SANV, SystemMemory, 89B2E418, ...)
+35:503  0:000  OCABC: AllocPages 1 0x896C2000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896C1000 (3) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, bin not found / already patched!
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, bin not found / already patched!
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, bin not found / already patched!
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  OCABC: AllocPages 1 0x896BF000 (2) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, bin not found / already patched!
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, bin not found / already patched!
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, bin not found / already patched!
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  OCABC: AllocPages 1 0x896BD000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896BC000 (3) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, bin not found / already patched!
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, bin not found / already patched!
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, bin not found / already patched!
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  Found OperationRegion(PNVS, SystemMemory, 77684000, ...)
+35:503  0:000  OCABC: AllocPages 1 0x896BA000 (2) - Success
+35:503  0:000  OCABC: AllocPages 1 0x896BA000 (2) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, patched at: [ (20) ]
+35:503  0:000   pattern 5F44534D, bin not found / already patched!
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:503  0:000   pattern 58484331, bin not found / already patched!
+35:503  0:000   pattern 4C50435F, bin not found / already patched!
+35:503  0:000   pattern 53415430, bin not found / already patched!
+35:503  0:000   pattern 45555342, bin not found / already patched!
+35:503  0:000   pattern 55534245, bin not found / already patched!
+35:503  0:000   pattern 47465830, bin not found / already patched!
+35:503  0:000   pattern 50454750, bin not found / already patched!
+35:503  0:000   pattern 415A414C, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 48454349, bin not found / already patched!
+35:503  0:000   pattern 4D45495F, bin not found / already patched!
+35:503  0:000  OCABC: AllocPages 1 0x896B8000 (2) - Success
+35:503  0:000  Patching SSDTs: 17 patches each
+35:503  0:000   pattern 5F4F5349, bin not found / already patched!
+35:503  0:000   pattern 48444153, bin not found / already patched!
+35:503  0:000   pattern 5F44534D, patched at: [ (A5) ]
+35:503  0:000   pattern 45484331, bin not found / already patched!
+35:503  0:000   pattern 45484332, bin not found / already patched!
+35:503  0:000   pattern 58484349, bin not found / already patched!
+35:504  0:000   pattern 58484331, bin not found / already patched!
+35:504  0:000   pattern 4C50435F, bin not found / already patched!
+35:504  0:000   pattern 53415430, bin not found / already patched!
+35:504  0:000   pattern 45555342, bin not found / already patched!
+35:504  0:000   pattern 55534245, bin not found / already patched!
+35:504  0:000   pattern 47465830, bin not found / already patched!
+35:504  0:000   pattern 50454750, bin not found / already patched!
+35:504  0:000   pattern 415A414C, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 48454349, bin not found / already patched!
+35:504  0:000   pattern 4D45495F, bin not found / already patched!
+35:504  0:000  OCABC: AllocPages 1 0x896B3000 (5) - Success
+35:504  0:000  Patching SSDTs: 17 patches each
+35:504  0:000   pattern 5F4F5349, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 5F44534D, bin not found / already patched!
+35:504  0:000   pattern 45484331, bin not found / already patched!
+35:504  0:000   pattern 45484332, bin not found / already patched!
+35:504  0:000   pattern 58484349, bin not found / already patched!
+35:504  0:000   pattern 58484331, bin not found / already patched!
+35:504  0:000   pattern 4C50435F, bin not found / already patched!
+35:504  0:000   pattern 53415430, bin not found / already patched!
+35:504  0:000   pattern 45555342, bin not found / already patched!
+35:504  0:000   pattern 55534245, bin not found / already patched!
+35:504  0:000   pattern 47465830, bin not found / already patched!
+35:504  0:000   pattern 50454750, bin not found / already patched!
+35:504  0:000   pattern 415A414C, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 48454349, bin not found / already patched!
+35:504  0:000   pattern 4D45495F, bin not found / already patched!
+35:504  0:000  OCABC: AllocPages 1 0x896B1000 (2) - Success
+35:504  0:000  Patching SSDTs: 17 patches each
+35:504  0:000   pattern 5F4F5349, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 5F44534D, bin not found / already patched!
+35:504  0:000   pattern 45484331, bin not found / already patched!
+35:504  0:000   pattern 45484332, bin not found / already patched!
+35:504  0:000   pattern 58484349, bin not found / already patched!
+35:504  0:000   pattern 58484331, bin not found / already patched!
+35:504  0:000   pattern 4C50435F, bin not found / already patched!
+35:504  0:000   pattern 53415430, bin not found / already patched!
+35:504  0:000   pattern 45555342, bin not found / already patched!
+35:504  0:000   pattern 55534245, bin not found / already patched!
+35:504  0:000   pattern 47465830, bin not found / already patched!
+35:504  0:000   pattern 50454750, bin not found / already patched!
+35:504  0:000   pattern 415A414C, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 48454349, bin not found / already patched!
+35:504  0:000   pattern 4D45495F, bin not found / already patched!
+35:504  0:000  OCABC: AllocPages 1 0x896AF000 (2) - Success
+35:504  0:000  Patching SSDTs: 17 patches each
+35:504  0:000   pattern 5F4F5349, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 5F44534D, bin not found / already patched!
+35:504  0:000   pattern 45484331, bin not found / already patched!
+35:504  0:000   pattern 45484332, bin not found / already patched!
+35:504  0:000   pattern 58484349, bin not found / already patched!
+35:504  0:000   pattern 58484331, bin not found / already patched!
+35:504  0:000   pattern 4C50435F, bin not found / already patched!
+35:504  0:000   pattern 53415430, bin not found / already patched!
+35:504  0:000   pattern 45555342, bin not found / already patched!
+35:504  0:000   pattern 55534245, bin not found / already patched!
+35:504  0:000   pattern 47465830, bin not found / already patched!
+35:504  0:000   pattern 50454750, bin not found / already patched!
+35:504  0:000   pattern 415A414C, bin not found / already patched!
+35:504  0:000   pattern 48444153, bin not found / already patched!
+35:504  0:000   pattern 48454349, bin not found / already patched!
+35:504  0:000   pattern 4D45495F, bin not found / already patched!
+35:504  0:000  OCABC: AllocPages 1 0x896AD000 (2) - Success
+35:504  0:000  OCABC: AllocPages 1 0x896AD000 (2) - Success
+35:504  0:000  OCABC: AllocPages 1 0x896AD000 (2) - Success
+35:504  0:000  OCABC: AllocPages 1 0x896AD000 (2) - Success
+35:504  0:000  === [ ACPIPatchedAML ] ==========================
+35:504  0:000  Unsorted
+35:504  0:000  Inserting SSDT-ECUSBX.aml from \EFI\CLOVER\ACPI\patched: size=290 OCABC: AllocPages 1 0x896AE000 (1) - Success
+... Success
+35:506  0:002  ApicCPUNum=1
+35:506  0:000  Cleanup XSDT: count=23, length=220
+35:506  0:000  corrected XSDT count=23, length=220
+35:506  0:000  === [ RestSetup macOS ] =========================
+35:506  0:000  EdidDiscovered size=128
+35:506  0:000  --- Discovered EDID Table size:128
+35:506  0:000  000  |  00  FF  FF  FF  FF  FF  FF  00  05  E3
+35:506  0:000  010  |  60  19  90  03  00  00  10  17  01  03
+35:506  0:000  020  |  A0  29  1A  78  22  3A  C5  A4  55  4D
+35:506  0:000  030  |  9F  25  12  50  54  BF  EF  00  95  00
+35:506  0:000  040  |  81  80  81  C0  01  01  01  01  01  01
+35:506  0:000  050  |  01  01  01  01  AB  22  A0  A0  50  84
+35:506  0:000  060  |  1A  30  30  20  36  00  98  FF  10  00
+35:506  0:000  070  |  00  1A  00  00  00  FD  00  32  4C  1E
+35:506  0:000  080  |  53  0E  00  0A  20  20  20  20  20  20
+35:506  0:000  090  |  00  00  00  FC  00  31  39  36  30  0A
+35:506  0:000  100  |  20  20  20  20  20  20  20  20  00  00
+35:506  0:000  110  |  00  FF  00  42  46  50  44  34  39  41
+35:506  0:000  120  |  30  30  30  39  31  32  01  1A
+35:506  0:000  add device: PciRoot(0x0)/Pci(0x2,0x0)
+35:506  0:000     Add key=AAPL,ig-platform-id valuelen=4
+35:506  0:000     Add key=framebuffer-fbmem valuelen=4
+35:506  0:000     Add key=framebuffer-patch-enable valuelen=4
+35:506  0:000     Add key=framebuffer-stolenmem valuelen=4
+35:506  0:000  Intel GFX injection not set
+35:506  0:000   RCBA disabled; cannot use it
+35:506  0:000   setting specified layout-id=1 (0x1)
+35:507  0:000  stringlength = 1542
+35:507  0:000  OCABC: AllocPages 1 0x896AD000 (1) - Success
+35:507  0:000  CurrentMode: Width=1024 Height=768
+35:507  0:000  SetNvramVariable (system-id, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x2, 16): -> writing new (Success)
+35:507  0:000  SetNvramVariable (MLB, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 17): -> writing new (Success)
+35:507  0:000  SetNvramVariable (ROM, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 6): -> writing new (Success)
+35:508  0:000  SetNvramVariable (FirmwareFeatures, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 4): -> writing new (Success)
+35:508  0:000  SetNvramVariable (FirmwareFeaturesMask, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 4): -> writing new (Success)
+35:508  0:000  SetNvramVariable (ExtendedFirmwareFeatures, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 8): -> writing new (Success)
+35:509  0:000  SetNvramVariable (ExtendedFirmwareFeaturesMask, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 8): -> writing new (Success)
+35:509  0:000  AddNvramVariable (HW_BID, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x6, 20): -> writing new (Success)
+35:510  0:000  AddNvramVariable (security-mode, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 5): -> already exists, abort
+35:510  0:000  DeleteNvramVariable (DefaultBackgroundColor, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14):
+35:510  0:000  DeleteNvramVariable (UIScale, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14):
+35:511  0:000  DeleteNvramVariable (EFILoginHiDPI, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:511  0:000  SetNvramVariable (flagstate, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 32): exists(0x7, 32), equal -> not writing again.
+35:511  0:000  SetNvramVariable (csr-active-config, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 4): exists(0x7, 4), equal -> not writing again.
+35:511  0:000  SetNvramVariable (BridgeOSHardwareModel, 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14, 0x7, 11): exists(0x7, 11), equal -> not writing again.
+35:511  0:000  DeleteNvramVariable (bootercfg, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:511  0:000  SetNvramVariable (nvda_drv, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 2): exists(0x7, 2), equal -> not writing again.
+35:512  0:000  DeleteNvramVariable (recovery-boot-mode, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:512  0:000  AddNvramVariable (wake-failure, 7C436110-AB2A-4BBB-A880-FE41995C9F82, 0x7, 5): -> already exists, abort
+35:512  0:000  DeleteNvramVariable (opencore-version, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:512  0:000  DeleteNvramVariable (ApBoardID, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:513  0:000  DeleteNvramVariable (ApSecurityDomain, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:513  0:000  DeleteNvramVariable (ApProductionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:513  0:000  DeleteNvramVariable (ApSecurityMode, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:514  0:000  DeleteNvramVariable (EffectiveProductionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:514  0:000  DeleteNvramVariable (EffectiveSecurityMode, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:514  0:000  DeleteNvramVariable (CertificateEpoch, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:514  0:000  DeleteNvramVariable (MixNMatchPreventionStatus, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:515  0:000  DeleteNvramVariable (CryptoDigestMethod, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:515  0:000  DeleteNvramVariable (InternalUseOnlyUnit, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:515  0:000  DeleteNvramVariable (ApECID, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:515  0:000  DeleteNvramVariable (HardwareModel, 94B73556-2197-4702-82A8-3E1337DAFBFB):
+35:515  0:000  Remap smbios table type 1 guid.
+35:525  0:009  DeleteNvramVariable (efi-boot-device, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:526  0:000  DeleteNvramVariable (efi-boot-device-data, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:526  0:000  DeleteNvramVariable (BootCampHD, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:526  0:000  Custom boot screen not used because entry has unset use graphics
+35:527  0:000  DeleteNvramVariable (IOHibernateRTCVariables, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:527  0:000  DeleteNvramVariable (boot-image, 7C436110-AB2A-4BBB-A880-FE41995C9F82):
+35:527  0:000  Kernel quirks
+35:527  0:000  ACPCL 1 AXCL 1 AXEM 0 AXFB 0 CSG 1 DIM 0 DLJ 0 DRC 1 DPM 0 EBTFF 0 EDI 0 IPBS 0 LKP 1 PNKD 0 PTKP 0 TPD 0 XPL 0 PCC 0
+35:527  0:000  Closing log
+35:528  0:001  OCABC: Patching safe mode sur-2 at off 1F0B
+35:529  0:000  OCABC: AllocPages 2 0x87DAB000 (512) - Success
+35:529  0:000  OCABC: AllocPages 2 0x87DAA000 (1) - Success
+35:529  0:000  OC: Supported boot capabilities 4
+35:529  0:000  OCABC: AllocPages 2 0x87DA9000 (1) - Success
+35:529  0:000  OCABC: AllocPages 2 0x87DA8000 (1) - Success
+35:529  0:000  OCABC: AllocPages 2 0x76E5F000 (512) - Success
+35:531  0:002  OCABC: AllocPages 1 0x76E5E000 (1) - Success
+35:536  0:004  OC: Opening file System\Library\Kernels\kernel with 1 mode gave - Not Found
+35:536  0:000  OC: Opening file \49A54020-6608-4046-90E2-22FA081B00EA with 1 mode gave - Success
+35:536  0:000  OC: Opening file \49A54020-6608-4046-90E2-22FA081B00EA\System\Library\CoreServices\com.apple.Boot.plist with 1 mode gave - Not Found
+35:536  0:000  OC: Opening file Library\Preferences\SystemConfiguration\com.apple.Boot.plist with 1 mode gave - Success
+35:537  0:000  OC: Opening file \49A54020-6608-4046-90E2-22FA081B00EA\System\Library\CoreServices\PlatformSupport.plist with 1 mode gave - Success
+35:538  0:001  OC: Opening file \49A54020-6608-4046-90E2-22FA081B00EA\System\Library\CoreServices\boot.efi with 1 mode gave - Success
+35:543  0:005  OC: Opening file boot\System\Library\KernelCollections\BootKernelExtensions.kc with 1 mode gave - Success
+35:669  0:125  OC: Kext reservation size info 53B000 exe 1EE000
+35:669  0:000  OC: Trying 64-bit XNU hook on boot\System\Library\KernelCollections\BootKernelExtensions.kc
+35:669  0:000  OCAK: Found 64-bit Mach-O compressed 0 offset 0 size 0
+35:669  0:000  OCAK: Determined kernel size is 68173824 bytes
+35:677  0:008  OC: Result of 64-bit XNU hook on boot\System\Library\KernelCollections\BootKernelExtensions.kc (00000000) is Success
+35:716  0:039  OCAK: Read kernel version 21.6.0 (210600)
+35:716  0:000  OCAK: 64-bit patcher base 0xFFFFFF8000200000 kmod 0x0 file 0x0
+35:718  0:001  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (76)
+35:718  0:000  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (406416)
+35:718  0:000  OCAK: Zeroing _xcpm_core_scope_msrs 0xE2 applicable CPUs (16384)
+35:719  0:001  Replace B9E20000000F30 by B9E20000009090 at ofs:30B
+35:719  0:000  Replace B9E20000000F30 by B9E20000009090 at ofs:395
+35:719  0:000  OCAK: 64-bit XcpmCfgLockRel replace count - 2
+35:719  0:000  Replace 658B0425000000003B0000000000/FFFFFFFFC3FFFFFFFF0000000000(658B0425200000003B05354C8A00) by 31C0909090909090909090909090 at ofs:DD
+35:719  0:000  OCAK: 64-bit LapicKernelPanic replace count - 1
+35:719  0:000  OCAK: Patch success lapic
+35:720  0:000  Replace 83000000000000/FF00000000FFFF(833D328C8B0000) by 31C09090909090 at ofs:C7
+35:720  0:000  OCAK: 64-bit LapicKernelPanicMaster replace count - 1
+35:720  0:000  OCAK: Patch success extended lapic
+35:766  0:046  OCAK: as.vit9696.Lilu got KXLD 0 0
+35:766  0:000  OCAK: Requesting __LINKEDIT for as.vit9696.Lilu - 82D36438 at 4105000
+35:766  0:000  OCAK: Requesting SymbolTable for as.vit9696.Lilu - 509
+35:766  0:000  OCAK: Requesting __LINKEDIT for __kernel__ - 7EC3CD00 at 0
+35:766  0:000  OCAK: Requesting SymbolTable for __kernel__ - 22268
+35:796  0:029  OCAK: Local relocs 598 on FFFFFF8004265000
+35:796  0:000  OC: Prelinked injection Kexts\Other\Lilu.kext () - Success
+35:796  0:000  OCAK: org.netkas.FakeSMC got KXLD 0 0
+35:796  0:000  OCAK: Requesting __LINKEDIT for org.netkas.FakeSMC - 82D5F398 at 412E000
+35:796  0:000  OCAK: Requesting SymbolTable for org.netkas.FakeSMC - 637
+35:798  0:001  OCAK: Patching invalid size 2000 with 18D7000 for com.apple.iokit.IOACPIFamily
+35:798  0:000  OCAK: com.apple.iokit.IOACPIFamily got KXLD 0 0
+35:798  0:000  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOACPIFamily - 8145F518 at 282E000
+35:798  0:000  OCAK: Requesting SymbolTable for com.apple.iokit.IOACPIFamily - 545
+35:807  0:008  OCAK: Local relocs 1425 on FFFFFF800428E000
+35:808  0:001  OC: Prelinked injection Kexts\Other\FakeSMC.kext () - Success
+35:808  0:000  OCAK: org.rehabman.driver.FakePCIID got KXLD 0 0
+35:808  0:000  OCAK: Requesting __LINKEDIT for org.rehabman.driver.FakePCIID - 82D72348 at 4141000
+35:808  0:000  OCAK: Requesting SymbolTable for org.rehabman.driver.FakePCIID - 619
+35:810  0:002  OCAK: Patching invalid size 2D000 with 142E000 for com.apple.iokit.IOPCIFamily
+35:810  0:000  OCAK: com.apple.iokit.IOPCIFamily got KXLD 0 0
+35:810  0:000  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOPCIFamily - 81908518 at 2CD7000
+35:810  0:000  OCAK: Requesting SymbolTable for com.apple.iokit.IOPCIFamily - 1442
+35:821  0:010  OCAK: Local relocs 652 on FFFFFF80042A1000
+35:822  0:000  OC: Prelinked injection Kexts\Other\FakePCIID.kext () - Success
+35:822  0:000  OCAK: org.rehabman.driver.FakePCIID.XHCIMux got KXLD 0 0
+35:822  0:000  OCAK: Requesting __LINKEDIT for org.rehabman.driver.FakePCIID.XHCIMux - 82D7F348 at 414E000
+35:822  0:000  OCAK: Requesting SymbolTable for org.rehabman.driver.FakePCIID.XHCIMux - 572
+35:822  0:000  OCAK: Requesting SymbolTable for org.rehabman.driver.FakePCIID - 257
+35:829  0:007  OCAK: Local relocs 646 on FFFFFF80042AE000
+35:829  0:000  OC: Prelinked injection Kexts\Other\FakePCIID_XHCIMux.kext () - Success
+35:830  0:000  OCAK: as.vit9696.WhateverGreen got KXLD 0 0
+35:830  0:000  OCAK: Requesting __LINKEDIT for as.vit9696.WhateverGreen - 82D8B3E8 at 415A000
+35:830  0:000  OCAK: Requesting SymbolTable for as.vit9696.WhateverGreen - 445
+35:830  0:000  OCAK: Requesting SymbolTable for as.vit9696.Lilu - 130
+35:836  0:006  OCAK: Symbol __ZN10DeviceInfo16processSwitchOffEv has 0-value
+35:837  0:000  OC: Prelinked injection Kexts\Other\WhateverGreen.kext () - Invalid Parameter
+35:837  0:000  OC: Prelinked injection Kexts\Other\AppleIntelKBLGraphicsFramebufferInjector_3e9x.kext () - Success
+35:837  0:000  OCAK: org.voodoo.driver.VoodooHDA got KXLD 0 0
+35:837  0:000  OCAK: Requesting __LINKEDIT for org.voodoo.driver.VoodooHDA - 82D8B398 at 415A000
+35:837  0:000  OCAK: Requesting SymbolTable for org.voodoo.driver.VoodooHDA - 784
+35:850  0:012  OCAK: Vtable patching failed for kext org.voodoo.driver.VoodooHDA
+35:850  0:000  OC: Prelinked injection Kexts\Other\VoodooHDA.kext () - Invalid Parameter
+35:850  0:000  OCAK: com.insanelymac.RealtekRTL8111 got KXLD 0 0
+35:850  0:000  OCAK: Requesting __LINKEDIT for com.insanelymac.RealtekRTL8111 - 82D8B398 at 415A000
+35:850  0:000  OCAK: Requesting SymbolTable for com.insanelymac.RealtekRTL8111 - 646
+35:852  0:001  OCAK: Patching invalid size 17000 with 16CC000 for com.apple.iokit.IONetworkingFamily
+35:852  0:000  OCAK: com.apple.iokit.IONetworkingFamily got KXLD 0 0
+35:852  0:000  OCAK: Requesting __LINKEDIT for com.apple.iokit.IONetworkingFamily - 8166A568 at 2A39000
+35:852  0:000  OCAK: Requesting SymbolTable for com.apple.iokit.IONetworkingFamily - 1695
+35:865  0:012  OCAK: Local relocs 469 on FFFFFF80042BA000
+35:865  0:000  OC: Prelinked injection Kexts\Other\RealtekRTL8111.kext () - Success
+35:865  0:000  OCAK: net.osx86.kexts.GenericUSBXHCI got KXLD 0 0
+35:865  0:000  OCAK: Requesting __LINKEDIT for net.osx86.kexts.GenericUSBXHCI - 82E0F3E8 at 41DE000
+35:865  0:000  OCAK: Requesting SymbolTable for net.osx86.kexts.GenericUSBXHCI - 625
+35:867  0:002  OCAK: Patching invalid size 65000 with 1156000 for com.apple.iokit.IOUSBFamily
+35:867  0:000  OCAK: com.apple.iokit.IOUSBFamily got KXLD 0 0
+35:867  0:000  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOUSBFamily - 81BE04D0 at 2FAF000
+35:867  0:000  OCAK: Requesting SymbolTable for com.apple.iokit.IOUSBFamily - 2808
+35:869  0:001  OCAK: Patching invalid size 4000 with 2681000 for com.apple.driver.usb.AppleUSBCommon
+35:869  0:000  OCAK: com.apple.driver.usb.AppleUSBCommon got KXLD 0 0
+35:869  0:000  OCAK: Requesting __LINKEDIT for com.apple.driver.usb.AppleUSBCommon - 806B5430 at 1A84000
+35:869  0:000  OCAK: Requesting SymbolTable for com.apple.driver.usb.AppleUSBCommon - 348
+35:872  0:002  OCAK: Patching invalid size 92000 with 10A9000 for com.apple.iokit.IOUSBHostFamily
+35:872  0:000  OCAK: com.apple.iokit.IOUSBHostFamily got KXLD 0 0
+35:872  0:000  OCAK: Requesting __LINKEDIT for com.apple.iokit.IOUSBHostFamily - 81C8D520 at 305C000
+35:872  0:000  OCAK: Requesting SymbolTable for com.apple.iokit.IOUSBHostFamily - 3283
+35:872  0:000  OCAK: Patching invalid size 4000 with 2B8C000 for com.apple.driver.AppleBusPowerController
+35:872  0:000  OCAK: com.apple.driver.AppleBusPowerController got KXLD 0 0
+35:872  0:000  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleBusPowerController - 801AA3E0 at 1579000
+35:872  0:000  OCAK: Requesting SymbolTable for com.apple.driver.AppleBusPowerController - 394
+35:873  0:000  OCAK: Patching invalid size 19000 with 27F5000 for com.apple.driver.AppleSMC
+35:873  0:000  OCAK: com.apple.driver.AppleSMC got KXLD 0 0
+35:873  0:000  OCAK: Requesting __LINKEDIT for com.apple.driver.AppleSMC - 80541480 at 1910000
+35:873  0:000  OCAK: Requesting SymbolTable for com.apple.driver.AppleSMC - 770
+35:875  0:002  OCAK: Patching invalid size 3000 with AE9000 for com.apple.driver.watchdog
+35:875  0:000  OCAK: com.apple.driver.watchdog got KXLD 0 0
+35:875  0:000  OCAK: Requesting __LINKEDIT for com.apple.driver.watchdog - 8224D3E0 at 361C000
+35:875  0:000  OCAK: Requesting SymbolTable for com.apple.driver.watchdog - 477
+35:927  0:051  OCAK: Local relocs 1087 on FFFFFF800433E000
+35:928  0:000  OC: Prelinked injection Kexts\Other\GenericUSBXHCI.kext () - Success
+35:928  0:000  OCAK: org.tgwbd.driver.NullCPUPowerManagement got KXLD 0 0
+35:928  0:000  OCAK: Requesting __LINKEDIT for org.tgwbd.driver.NullCPUPowerManagement - 82E32348 at 4201000
+35:928  0:000  OCAK: Requesting SymbolTable for org.tgwbd.driver.NullCPUPowerManagement - 327
+35:932  0:004  OCAK: Local relocs 304 on FFFFFF8004361000
+35:933  0:000  OC: Prelinked injection Kexts\Other\NullCPUPowerManagement.kext () - Success
+35:936  0:002  OCAK: com.rehabman.driver.USBInjectAll got KXLD 0 0
+35:936  0:000  OCAK: Requesting __LINKEDIT for com.rehabman.driver.USBInjectAll - 82E3C398 at 420B000
+35:936  0:000  OCAK: Requesting SymbolTable for com.rehabman.driver.USBInjectAll - 351
+35:941  0:005  OCAK: Local relocs 602 on FFFFFF800436B000
+35:949  0:008  OC: Prelinked injection Kexts\Other\USBInjectAll.kext () - Success
+35:950  0:000  OCAK: org.hwsensors.driver.GPUSensors got KXLD 0 0
+35:950  0:000  OCAK: Requesting __LINKEDIT for org.hwsensors.driver.GPUSensors - 82E473E8 at 4216000
+35:950  0:000  OCAK: Requesting SymbolTable for org.hwsensors.driver.GPUSensors - 566
+35:958  0:008  OCAK: Vtable patching failed for kext org.hwsensors.driver.GPUSensors
+35:959  0:000  OC: Prelinked injection Kexts\Other\FakeSMC_GPUSensors.kext () - Invalid Parameter
+35:959  0:000  OC: Prelinked injection Kexts\Other\XHCI-unsupported.kext () - Success
+35:959  0:000  OC: Prelink size 69296128 kext offset 68177920 reserved 2023424
+35:959  0:000  OCAK: KC TEXT is 65536 bytes with 64096 Mach-O headers need 736
+35:971  0:012  OCAK: Patching invalid size 1D000 with 29E0000 for com.apple.driver.AppleIntelCPUPowerManagement
+35:971  0:000  OCAK: com.apple.driver.AppleIntelCPUPowerManagement got KXLD 0 0
+36:039  0:068  OCAK: Patching invalid size 6000 with 2834000 for com.apple.driver.AppleRTC
+36:039  0:000  OCAK: com.apple.driver.AppleRTC got KXLD 0 0
+36:039  0:000  Replace BE58000000/FFFEFFFFFF(BE58000000) by BEFFFF0000 at ofs:1AAB
+36:039  0:000  Replace BE58000000/FFFEFFFFFF(BE59000000) by BEFFFF0000 at ofs:1ABB
+36:039  0:000  Replace BE58000000/FFFEFFFFFF(BE58000000) by BEFFFF0000 at ofs:1D9B
+36:039  0:000  Replace BE58000000/FFFEFFFFFF(BE59000000) by BEFFFF0000 at ofs:1DAC
+36:039  0:000  OCAK: 64-bit DisableRtcChecksum64 replace count - 4
+36:039  0:000  OCAK: Patch success com.apple.driver.AppleRTC DisableRtcChecksum
+36:040  0:000  OCAK: Patching invalid size 3000 with 27FA000 for com.apple.driver.AppleSMBIOS
+36:040  0:000  OCAK: com.apple.driver.AppleSMBIOS got KXLD 0 0
+36:040  0:000  Replace 4542394432443331 by 4542394432443335 at ofs:2D44
+36:040  0:000  OCAK: 64-bit CustomSmbiosGuid replace count - 1
+36:040  0:000  OCAK: SMBIOS Patch success
+36:040  0:000  OCAK: Patching invalid size 78000 with 2EFC000 for com.apple.driver.AppleACPIPlatform
+36:040  0:000  OCAK: com.apple.driver.AppleACPIPlatform got KXLD 0 0
+36:042  0:001  Replace 4542394432443331 by 4542394432443335 at ofs:613FC
+36:042  0:000  OCAK: 64-bit CustomSmbiosGuid replace count - 1
+36:042  0:000  OCAK: SMBIOS Patch success
+36:174  0:132  OC: Prelinked status - Success
+36:174  0:000  OCABC: AllocPages 2 0xD000000 (16) - Success
+36:174  0:000  OCABC: AllocPages 2 0xD010000 (2580) - Success
+36:176  0:001  OCABC: AllocPages 2 0xDA24000 (140) - Success
+36:176  0:000  OCABC: AllocPages 2 0xDAB0000 (980) - Success
+36:176  0:000  OCABC: AllocPages 2 0xDE84000 (732) - Success
+36:177  0:000  OCABC: AllocPages 2 0xCF00000 (160) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE160000 (8) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE168000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE169000 (120) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1E1000 (14) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1EF000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1F0000 (3) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1F3000 (3) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1F6000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1F7000 (6) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1FD000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE1FF000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE200000 (10) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE20A000 (6) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE210000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE211000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE213000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE214000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE215000 (7) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE21C000 (3) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE21F000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE220000 (91) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE27B000 (10) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE285000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE287000 (517) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE48C000 (31) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4AB000 (5) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4B0000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4B1000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4B2000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4B3000 (9) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4BC000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4BE000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4BF000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4C0000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4C1000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4C2000 (8) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4CA000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4CC000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4CD000 (7) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4D4000 (4) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4D8000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4D9000 (4) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4DD000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4DE000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE4DF000 (48) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE50F000 (8) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE517000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE518000 (42) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE542000 (7) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE549000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE54A000 (92) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5A6000 (7) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5AD000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5AE000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5B0000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5B1000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5B2000 (10) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5BC000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5BE000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5BF000 (5) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5C4000 (3) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5C7000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5C8000 (6) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5CE000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D0000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D1000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D2000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D3000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D4000 (3) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D7000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5D8000 (6) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5DE000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5E0000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5E1000 (2) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5E3000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5E4000 (1) - Success
+36:177  0:000  OCABC: AllocPages 2 0xE5E5000 (18) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5F7000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5FA000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5FB000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5FD000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5FE000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE5FF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE600000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE601000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE602000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE607000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE609000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE60A000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE60B000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE60C000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE60D000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE610000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE611000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE612000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE614000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE615000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE616000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE618000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE619000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE61A000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE61C000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE61D000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE61E000 (8) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE626000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE62B000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE62C000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE631000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE633000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE634000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE642000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE646000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE647000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE64C000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE64E000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE64F000 (25) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE668000 (7) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE66F000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE670000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE67E000 (6) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE684000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE685000 (29) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6A2000 (12) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6AE000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6AF000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6B1000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6B2000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6B3000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6B8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6B9000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6BA000 (7) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6C1000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6C2000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6C3000 (7) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6CA000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6CB000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6CC000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6DA000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6DF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6E0000 (12) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6EC000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6EF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE6F0000 (151) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE787000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE78B000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE78D000 (20) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7A1000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7A6000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7A7000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7AB000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7AC000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7AD000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7B0000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7B1000 (35) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7D4000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7D8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7D9000 (9) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7E2000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7E4000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7E5000 (20) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7F9000 (6) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE7FF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE800000 (10) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE80A000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE80C000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE80D000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE811000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE813000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE814000 (19) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE827000 (9) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE830000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE831000 (6) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE837000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE839000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE83A000 (24) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE852000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE855000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE856000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE864000 (6) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE86A000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE86B000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE86E000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE86F000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE870000 (25) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE889000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE88C000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE88D000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE891000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE892000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE893000 (8) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE89B000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE89D000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE89E000 (20) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8B2000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8B7000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8B8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8B9000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8BB000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8BC000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8BD000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8BF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8C0000 (10) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8CA000 (5) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8CF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D0000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D1000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D2000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D3000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D5000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D7000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8D8000 (8) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8E0000 (7) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8E7000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8E8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8E9000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8EB000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8EC000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8ED000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8EF000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F0000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F1000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F3000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F4000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F5000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F6000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F7000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8F9000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE8FA000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE908000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE90B000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE90C000 (23) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE923000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE925000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE926000 (10) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE930000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE932000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE933000 (33) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE954000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE957000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE958000 (49) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE989000 (10) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE993000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE994000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE998000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE999000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE99A000 (20) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9AE000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9B0000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9B1000 (14) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9BF000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9C2000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9C3000 (7) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9CA000 (3) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9CD000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9CE000 (9) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9D7000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9DB000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9DC000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9DD000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9DE000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9DF000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9E1000 (2) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9E3000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9E4000 (4) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9E8000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9E9000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9EA000 (6) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9F0000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9F1000 (1) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9F2000 (11) - Success
+36:178  0:000  OCABC: AllocPages 2 0xE9FD000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xE9FE000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xE9FF000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA01000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA02000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA03000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA07000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA0A000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA0B000 (12) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA17000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA1B000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA1C000 (10) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA26000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA2A000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA2B000 (7) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA32000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA34000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA35000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA37000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA38000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA39000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA3C000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA3E000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA3F000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA41000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA42000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA43000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA44000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA45000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA46000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA48000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA49000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA4A000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA4C000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA4D000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA4E000 (29) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA6B000 (15) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA7A000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA7B000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA7E000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA81000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA82000 (14) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA90000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA93000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA95000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA96000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA97000 (7) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEA9E000 (5) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAA3000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAA4000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAA8000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAAB000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAAC000 (5) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAB1000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAB5000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAB6000 (7) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEABD000 (5) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAC2000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAC3000 (13) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAD0000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAD2000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAD4000 (8) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEADC000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEADF000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEAE0000 (175) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEB8F000 (8) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEB97000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEB98000 (21) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBAD000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBAE000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBAF000 (9) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBB8000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBBA000 (3) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBBD000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBBF000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEBC0000 (86) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC16000 (6) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC1C000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC1E000 (95) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC7D000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC7F000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC83000 (2) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC85000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC86000 (1) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEC87000 (404) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEE1B000 (28) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEE37000 (6) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEE3D000 (326) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEF83000 (23) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEF9A000 (4) - Success
+36:179  0:000  OCABC: AllocPages 2 0xEF9E000 (1370) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF4F8000 (657) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF789000 (1) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF78A000 (2) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF78C000 (1) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF78D000 (1) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF78E000 (2) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF790000 (2) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF792000 (1) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF793000 (2) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF795000 (16) - Success
+36:180  0:000  OCABC: AllocPages 2 0xF7A5000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7A9000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7AA000 (24) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7C2000 (6) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7C8000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7C9000 (7) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7D0000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7D2000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7D3000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7DC000 (6) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7E2000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7E3000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7EC000 (6) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7F2000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7F3000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7F6000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7F7000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7F8000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7FB000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF7FF000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF800000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF803000 (55) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF83A000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF843000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF844000 (20) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF858000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF85B000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF85C000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF85F000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF861000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF862000 (7) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF869000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF86C000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF86D000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF872000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF876000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF877000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF87A000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF87E000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF87F000 (12) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF88B000 (6) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF891000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF892000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF894000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF895000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF896000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF89A000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF89C000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF89D000 (8) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8A5000 (6) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8AB000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8AC000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8AD000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8AE000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8AF000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B0000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B1000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B2000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B4000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B5000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8B6000 (15) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8C5000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8C9000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF8CA000 (94) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF928000 (30) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF946000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF948000 (18) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF95A000 (4) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF95E000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF95F000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF960000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF961000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF962000 (45) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF98F000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF998000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF999000 (23) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF9B0000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF9B9000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF9BA000 (14) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF9C8000 (33) - Success
+36:181  0:000  OCABC: AllocPages 2 0xF9E9000 (36) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA0D000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA0E000 (42) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA38000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA41000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA42000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFA44000 (418) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFBE6000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFBE7000 (15) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFBF6000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFBF8000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFBF9000 (21) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC0E000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC11000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC12000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC17000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC18000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC19000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC1B000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC1D000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC1E000 (15) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC2D000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC2F000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC30000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC35000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC36000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC37000 (45) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC64000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC6D000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC6E000 (7) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC75000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC78000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC7A000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC7B000 (21) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC90000 (8) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC98000 (2) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFC9A000 (9) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCA3000 (14) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCB1000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCB6000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCB7000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCBC000 (13) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCC9000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCCE000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCCF000 (8) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCD7000 (5) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCDC000 (3) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCDF000 (1) - Success
+36:181  0:000  OCABC: AllocPages 2 0xFCE0000 (4) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCE4000 (5) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCE9000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCEB000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCEC000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCEE000 (12) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCFA000 (4) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCFE000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFCFF000 (3) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD02000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD03000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD04000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD05000 (7) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD0C000 (4) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD10000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD11000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD13000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD15000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD16000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD17000 (75) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD62000 (14) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD70000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD72000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD74000 (3) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD77000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD78000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD7A000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD7B000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD7C000 (23) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD93000 (10) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD9D000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFD9E000 (12) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFDAA000 (29) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFDC7000 (5) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFDCC000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFDCD000 (231) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFEB4000 (43) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFEDF000 (2) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFEE1000 (29) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFEFE000 (16) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFF0E000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFF0F000 (101) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFF74000 (19) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFF87000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFF88000 (24) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA0000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA1000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA2000 (3) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA5000 (3) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA8000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFA9000 (6) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFAF000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFB0000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFB1000 (6) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFB7000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFB8000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFB9000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFBA000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFBB000 (1) - Success
+36:182  0:000  OCABC: AllocPages 2 0xFFBC000 (146) - Not Found
+36:183  0:000  OC: Opening file boot\System\Library\KernelCollections\BootKernelExtensions.kc.development with 1 mode gave - Not Found
+46:186  10:003  OCB: InternalEfiExit 83722598 - Aborted / Unsupported
+46:187  0:001  StartImage failed : Aborted
